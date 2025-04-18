@@ -1,0 +1,18 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #dc3545; /* Bootstrap's danger red */
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  #top {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }  

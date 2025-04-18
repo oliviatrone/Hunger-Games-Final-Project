@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunger Games - District Selector</title>
+  <link rel="stylesheet" href="css/styles.css"> <!-- Link to your main stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Link to Bootstrap CSS -->
+  <style>
+    /* Add any custom styles for this page if needed */
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+    .output {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .btn-primary {
+      background-color: #d9534f;
+      border: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center">Hunger Games - District Selector</h1>
+    <form id="districtForm">
+      <div class="form-group">
+        <label for="nameInput">Enter Your Name:</label>
+        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name" required>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Get Your District</button>
+    </form>
+
+    <div id="districtOutput" class="output"></div> <!-- Output area for district result -->
+  </div>
+
+  <script src="js/app.js"></script> <!-- Link to your app.js script -->
+
+</body>
+</html>
