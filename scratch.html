@@ -4,107 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch Page</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scratch.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Scratch Page: The Hunger Games</h1>
-
-        <!-- Proper Ordered List with Hunger Games Info -->
-        <ol>
-            <li>District 1: Luxury &amp; Wealth
-                <ul>
-                    <li>Luxury goods</li>
-                    <li>High-class citizens</li>
-                </ul>
-            </li>
-            <li>District 2: Masonry &amp; Defense
-                <ul>
-                    <li>Stonemasonry</li>
-                    <li>Peacekeepers</li>
-                </ul>
-            </li>
-            <li>District 3: Technology &amp; Electronics
-                <ul>
-                    <li>Electronics</li>
-                    <li>Innovation and technology</li>
-                </ul>
-            </li>
-            <li>District 4: Fishing &amp; Seafood
-                <ul>
-                    <li>Fishing industry</li>
-                    <li>Seafood for the Capitol</li>
-                </ul>
-            </li>
-            <li>District 5: Power &amp; Energy
-                <ul>
-                    <li>Hydroelectric power plants</li>
-                    <li>Energy for Panem</li>
-                </ul>
-            </li>
-            <li>District 6: Transportation &amp; Vehicles
-                <ul>
-                    <li>Trains</li>
-                    <li>Transportation technology</li>
-                </ul>
-            </li>
-            <li>District 7: Lumber &amp; Paper
-                <ul>
-                    <li>Forests</li>
-                    <li>Wood for construction and paper</li>
-                </ul>
-            </li>
-            <li>District 8: Textiles &amp; Clothing
-                <ul>
-                    <li>Clothing production</li>
-                    <li>Textiles for Capitol fashion</li>
-                </ul>
-            </li>
-            <li>District 9: Grain &amp; Agriculture
-                <ul>
-                    <li>Crops</li>
-                    <li>Food for Panem</li>
-                </ul>
-            </li>
-            <li>District 10: Livestock &amp; Meat
-                <ul>
-                    <li>Cattle farming</li>
-                    <li>Meat production</li>
-                </ul>
-            </li>
-            <li>District 11: Agriculture &amp; Farming
-                <ul>
-                    <li>Fruit and vegetables</li>
-                    <li>Farmworkers' rebellion</li>
-                </ul>
-            </li>
-            <li>District 12: Coal Mining
-                <ul>
-                    <li>Coal for the Capitol</li>
-                    <li>Poverty-stricken workers</li>
-                </ul>
-            </li>
-        </ol>
+        <h1 class="text-center">The Hunger Games</h1>
 
         <!-- Katniss Image -->
-        <img src="Katniss_Everdeen.jpg" alt="Katniss Everdeen" class="img-fluid mb-4">
-
-        <!-- YouTube Video -->
-        <div class="embed-responsive embed-responsive-16by9 mb-4">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d7k_BVeUwlY" allowfullscreen></iframe>
+        <div class="text-center">
+            <img src="Katniss Everdeen.jpg" alt="Katniss Everdeen" class="img-fluid">
         </div>
 
-        <!-- Tableau Visualization -->
+        <!-- YouTube Video -->
+        <div class="text-center my-4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mfmrPu43DF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <!-- Ordered List -->
+        <ol>
+            <li>District 1 - Luxury</li>
+            <li>District 2 - Masonry</li>
+            <li>District 3 - Technology</li>
+            <li>District 4 - Fishing</li>
+            <li>District 5 - Power</li>
+            <li>District 6 - Transportation</li>
+            <li>District 7 - Lumber</li>
+            <li>District 8 - Textiles</li>
+            <li>District 9 - Grain</li>
+            <li>District 10 - Livestock</li>
+            <li>District 11 - Agriculture</li>
+            <li>District 12 - Coal</li>
+        </ol>
+
+        <!-- Tableau Embed -->
         <div class='tableauPlaceholder' id='viz1745010521182' style='position: relative'>
             <noscript>
                 <a href='#'>
-                    <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/Hu/HungerGamesDashboardFinal/Dashboard1/1_rss.png' style='border: none' />
+                    <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Hu/HungerGamesDashboardFinal/Dashboard1/1_rss.png' style='border: none' />
                 </a>
             </noscript>
             <object class='tableauViz' style='display:none;'>
                 <param name='host_url' value='https://public.tableau.com/' />
                 <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
                 <param name='name' value='HungerGamesDashboardFinal/Dashboard1' />
                 <param name='tabs' value='no' />
                 <param name='toolbar' value='yes' />
@@ -121,22 +68,33 @@
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1745010521182');
             var vizElement = divElement.getElementsByTagName('object')[0];
-            if ( divElement.offsetWidth > 800 ) {
-                vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-            } else if ( divElement.offsetWidth > 500 ) {
-                vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.minWidth = '420px';
+                vizElement.style.maxWidth = '650px';
+                vizElement.style.width = '100%';
+                vizElement.style.minHeight = '587px';
+                vizElement.style.maxHeight = '887px';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.minWidth = '420px';
+                vizElement.style.maxWidth = '650px';
+                vizElement.style.width = '100%';
+                vizElement.style.minHeight = '587px';
+                vizElement.style.maxHeight = '887px';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
             } else {
-                vizElement.style.width='100%';vizElement.style.height='927px';
+                vizElement.style.width = '100%';
+                vizElement.style.height = '927px';
             }
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
 
-        <!-- Link to District App -->
-        <a href="app.html" class="btn btn-primary">Go to District App</a>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
