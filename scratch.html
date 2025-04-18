@@ -1,133 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Scratch Page - Hunger Games</title>
-  <link rel="stylesheet" href="css/scratch.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hunger Games Scratch Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/scratch.css" />
   <style>
     body {
-      background-color: #f4efe3;
+      background-color: #fcefe3;
+      font-family: Georgia, serif;
+      padding: 20px;
     }
-    .section {
-      margin-bottom: 50px;
-    }
-    img {
+    .katniss-img {
       max-width: 100%;
       height: auto;
+      border: 3px solid #333;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 30px;
+      border: none;
     }
   </style>
 </head>
 <body>
 
-<div class="container mt-5">
-  <h1 class="text-center text-danger">Scratch Page: The Hunger Games</h1>
+  <h1>Hunger Games - Scratch Page</h1>
 
-  <!-- Anchor link -->
-  <p class="text-center"><a href="#tableau-section" class="btn btn-dark mt-3">Jump to Tableau Dashboard</a></p>
+  <h2>Katniss Everdeen</h2>
+  <img src="assets/Katniss Everdeen.jpg" alt="Katniss Everdeen" class="katniss-img">
 
-  <!-- Ordered + Unordered List -->
-  <div class="section">
-    <h2>Top Tributes</h2>
-    <ol>
-      <li>Katniss Everdeen
-        <ul>
-          <li>District 12</li>
-          <li>The Girl on Fire</li>
-        </ul>
-      </li>
-      <li>Peeta Mellark
-        <ul>
-          <li>District 12</li>
-          <li>The Boy with the Bread</li>
-        </ul>
-      </li>
-      <li>Rue
-        <ul>
-          <li>District 11</li>
-          <li>Small and fierce</li>
-        </ul>
-      </li>
-    </ol>
+  <h2>Training Camp Essentials</h2>
+  <ol>
+    <li>Survival Skills
+      <ul>
+        <li>Fire-starting</li>
+        <li>Foraging</li>
+        <li>Camouflage</li>
+      </ul>
+    </li>
+    <li>Combat Skills</li>
+    <li>Team Strategy</li>
+  </ol>
+
+  <h2>Behind the Scenes Video</h2>
+  <iframe src="https://www.youtube.com/embed/mfmrPu43DF8" allowfullscreen></iframe>
+
+  <h2>District Data Visualization</h2>
+  <div class='tableauPlaceholder' id='viz1682072745764' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='District Data' src='https://public.tableau.com/static/images/Hu/HungerGamesDistricts/Dashboard1/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='path' value='shared%2FJZDYW7N93' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Hu/HungerGamesDistricts/Dashboard1/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+    </object>
   </div>
 
-  <!-- Image -->
-  <div class="section">
-    <h2>Image of Katniss</h2>
-    <img src="assets/Katniss_Everdeen.jpg" alt="Katniss Everdeen">
-  </div>
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1682072745764');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '500px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
-  <!-- YouTube Video -->
-  <div class="section">
-    <h2>Watch a Scene</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mfmrPu43DF8" title="Hunger Games Trailer"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-  </div>
-
-  <!-- Link to App Page -->
-  <div class="section">
-    <h2>Try the District App</h2>
-    <a href="app.html" class="btn btn-danger">Go to App</a>
-  </div>
-
-  <!-- Tableau Embed -->
-  <div class="section" id="tableau-section">
-    <h2>District Dashboard</h2>
-    <div class='tableauPlaceholder' id='viz1745010521182' style='position: relative'>
-      <noscript>
-        <a href='#'>
-          <img alt='Dashboard 1 '
-               src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hu&#47;HungerGamesDashboardFinal&#47;Dashboard1&#47;1_rss.png'
-               style='border: none'/>
-        </a>
-      </noscript>
-      <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
-        <param name='embed_code_version' value='3'/>
-        <param name='site_root' value=''/>
-        <param name='name' value='HungerGamesDashboardFinal&#47;Dashboard1'/>
-        <param name='tabs' value='no'/>
-        <param name='toolbar' value='yes'/>
-        <param name='static_image'
-               value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Hu&#47;HungerGamesDashboardFinal&#47;Dashboard1&#47;1.png'/>
-        <param name='animate_transition' value='yes'/>
-        <param name='display_static_image' value='yes'/>
-        <param name='display_spinner' value='yes'/>
-        <param name='display_overlay' value='yes'/>
-        <param name='display_count' value='yes'/>
-        <param name='language' value='en-US'/>
-        <param name='filter' value='publish=yes'/>
-      </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1745010521182');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      if (divElement.offsetWidth > 800) {
-        vizElement.style.minWidth = '420px';
-        vizElement.style.maxWidth = '650px';
-        vizElement.style.width = '100%';
-        vizElement.style.minHeight = '587px';
-        vizElement.style.maxHeight = '887px';
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-      } else if (divElement.offsetWidth > 500) {
-        vizElement.style.minWidth = '420px';
-        vizElement.style.maxWidth = '650px';
-        vizElement.style.width = '100%';
-        vizElement.style.minHeight = '587px';
-        vizElement.style.maxHeight = '887px';
-        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-      } else {
-        vizElement.style.width = '100%';
-        vizElement.style.height = '927px';
-      }
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-  </div>
-
-</div>
+  <h2>Want to know your District?</h2>
+  <p><a href="app.html">Click here to try the District Generator!</a></p>
 
 </body>
 </html>
