@@ -3,53 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scratch Page</title>
-    <!-- Bootstrap CSS -->
+    <title>Scratch Page - Hunger Games</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/scratch.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scratch.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">The Hunger Games</h1>
+        <h1 class="text-center my-5">The Hunger Games</h1>
 
         <!-- Katniss Image -->
         <div class="text-center">
-            <img src="Katniss Everdeen.jpg" alt="Katniss Everdeen" class="img-fluid">
+            <img src="Katniss_Everdeen.jpg" alt="Katniss Everdeen" class="img-fluid rounded">
         </div>
 
-        <!-- YouTube Video -->
-        <div class="text-center my-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mfmrPu43DF8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-        </div>
-
-        <!-- Ordered List -->
+        <!-- Unordered List Inside Ordered List -->
         <ol>
-            <li>District 1 - Luxury</li>
-            <li>District 2 - Masonry</li>
-            <li>District 3 - Technology</li>
-            <li>District 4 - Fishing</li>
-            <li>District 5 - Power</li>
-            <li>District 6 - Transportation</li>
-            <li>District 7 - Lumber</li>
-            <li>District 8 - Textiles</li>
-            <li>District 9 - Grain</li>
-            <li>District 10 - Livestock</li>
-            <li>District 11 - Agriculture</li>
-            <li>District 12 - Coal</li>
+            <li>District 1
+                <ul>
+                    <li>Luxury</li>
+                    <li>Wealth</li>
+                </ul>
+            </li>
+            <li>District 2
+                <ul>
+                    <li>Stone</li>
+                    <li>Mining</li>
+                </ul>
+            </li>
+            <li>District 3
+                <ul>
+                    <li>Technology</li>
+                    <li>Electronics</li>
+                </ul>
+            </li>
+            <!-- Add more districts as needed -->
         </ol>
+
+        <!-- YouTube Video Embed -->
+        <div class="text-center my-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mfmrPu43DF8?rel=0&autohide=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
         <!-- Tableau Embed -->
         <div class='tableauPlaceholder' id='viz1745010521182' style='position: relative'>
             <noscript>
                 <a href='#'>
-                    <img alt='Dashboard 1' src='https://public.tableau.com/static/images/Hu/HungerGamesDashboardFinal/Dashboard1/1_rss.png' style='border: none' />
+                    <img alt='Dashboard 1 ' src='https://public.tableau.com/static/images/Hu/HungerGamesDashboardFinal/Dashboard1/1_rss.png' style='border: none' />
                 </a>
             </noscript>
             <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https://public.tableau.com/' />
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
                 <param name='site_root' value='' />
                 <param name='name' value='HungerGamesDashboardFinal/Dashboard1' />
@@ -65,6 +68,7 @@
                 <param name='filter' value='publish=yes' />
             </object>
         </div>
+
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1745010521182');
             var vizElement = divElement.getElementsByTagName('object')[0];
@@ -91,10 +95,10 @@
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
         </script>
 
+        <!-- Navigation Back to Other Pages -->
+        <div class="text-center my-5">
+            <a href="index.html" class="btn btn-primary">Back to Home</a>
+        </div>
     </div>
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
